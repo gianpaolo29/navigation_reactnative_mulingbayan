@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(node -e \"const glyphMap = require\\('@expo/vector-icons/build/vendor/react-native-vector-icons/glyphmaps/MaterialIcons.json'\\); const matches = Object.keys\\(glyphMap\\).filter\\(k => k.includes\\('home'\\)\\); console.log\\(matches.join\\('\\\\n'\\)\\);\")",
+      "Bash(node -e \"const glyphMap = require\\('@expo/vector-icons/build/vendor/react-native-vector-icons/glyphmaps/MaterialCommunityIcons.json'\\); const matches = Object.keys\\(glyphMap\\).filter\\(k => k.includes\\('home-outline'\\)\\); console.log\\(matches.join\\('\\\\n'\\)\\);\")",
+      "Bash(node -e \"const glyphMap = require\\('@expo/vector-icons/build/vendor/react-native-vector-icons/glyphmaps/MaterialCommunityIcons.json'\\); const matches = Object.keys\\(glyphMap\\).filter\\(k => k.includes\\('cog-outline'\\)\\); console.log\\(matches.join\\('\\\\n'\\)\\);\")",
+      "Bash(npx tsc:*)"
+    ]
+  }
+}
