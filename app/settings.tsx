@@ -1,6 +1,7 @@
 import { View, Text, ScrollView, StyleSheet, Pressable } from 'react-native';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import { useRouter } from 'expo-router';
+import Ionicons from '@expo/vector-icons/Ionicons';
 
 type SettingRowProps = {
   iconColor: string;
@@ -70,7 +71,7 @@ export default function SettingsScreen() {
       </ScrollView>
 
       <Pressable style={styles.backButton} onPress={() => router.push('/(tabs)')}>
-        <MaterialIcons name="keyboard-return" size={24} color="#3B82F6" />
+        <Ionicons name="return-down-back-outline" size={26} color="#3B82F6" />
         <Text style={styles.backText}>Back to Chats</Text>
       </Pressable>
     </View>
@@ -171,18 +172,17 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   backButton: {
-    flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    paddingVertical: 14,
+    paddingVertical: 10,
     borderTopWidth: 1,
     borderTopColor: '#E5E7EB',
     backgroundColor: '#fff',
-    gap: 6,
   },
   backText: {
-    fontSize: 15,
-    fontWeight: '500',
+    fontSize: 12,
+    fontWeight: '600',
     color: '#3B82F6',
+    marginTop: 2,
   },
 });
